@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    consul:
+      host: pos-clusters-node1
+      port: 8500
+      discovery:
+        fail-fast: true
+        acl-token: c25644e6-69c4-6c6f-142e-ca6ec2a4c8e8
+      config:
+        enabled: true
+        acl-token: c25644e6-69c4-6c6f-142e-ca6ec2a4c8e8
+    stream:
+      instanceCount: 1
+      instanceIndex: 0
+      bindings:
+        input:
+          consumer:
+            autoCommitOffset: true
+            startOffset: earliest
+            headerMode: raw
+        output:
+          producer:
+            bufferSize: 16384
+            sync: true
+            batchTimeout: 0
+      default-binder: rabbit
+
+
+  rabbitmq:
+    addresses: mqserver.pos:5672
+    virtual-host: fanout_host
+    username: bigboss
+    password: AdoMJnG3gZtV
