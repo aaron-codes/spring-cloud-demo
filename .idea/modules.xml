@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/core/eureka-server-core.iml" filepath="$PROJECT_DIR$/eureka-server/core/eureka-server-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/micro-server.iml" filepath="$PROJECT_DIR$/.idea/micro-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qingsu-user/qingsu-user.iml" filepath="$PROJECT_DIR$/qingsu-user/qingsu-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qingsu-user/api/qingsu-user-api.iml" filepath="$PROJECT_DIR$/qingsu-user/api/qingsu-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qingsu-user/core/qingsu-user-core.iml" filepath="$PROJECT_DIR$/qingsu-user/core/qingsu-user-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/springcloud.iml" filepath="$PROJECT_DIR$/eureka-server/springcloud.iml" />
     </modules>
   </component>
 </project>

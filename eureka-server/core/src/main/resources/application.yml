@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: eureka-server-node1
+server:
+  port: 9214
+
+---
+spring:
+  profiles: eureka-server-node1
+server:
+  port: 9214
+eureka:
+  instance:
+    hostname: eureka-server-node1
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server-node1:9214/eureka/
+    register-with-eureka: false
+    fetch-registry: false

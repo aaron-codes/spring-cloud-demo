@@ -11,6 +11,35 @@
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
-    <bytecodeTargetLevel target="1.8" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="eureka-server-core" />
+        <module name="pos-common" />
+        <module name="pos-demo-api" />
+        <module name="pos-demo-core" />
+        <module name="pos_server_center" />
+        <module name="qingsu-user-api" />
+        <module name="qingsu-user-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="base" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="eureka-server-core" target="1.8" />
+      <module name="micro-server" target="1.8" />
+      <module name="pos-common" target="1.8" />
+      <module name="pos-demo-api" target="1.8" />
+      <module name="pos-demo-core" target="1.8" />
+      <module name="pos_server_center" target="1.8" />
+      <module name="qingsu-user" target="1.8" />
+      <module name="qingsu-user-api" target="1.8" />
+      <module name="qingsu-user-core" target="1.8" />
+      <module name="springcloud" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
