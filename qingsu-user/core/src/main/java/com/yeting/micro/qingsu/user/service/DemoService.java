@@ -1,15 +1,14 @@
-package com.djdg.pos.demo.service;
+package com.yeting.micro.qingsu.user.service;
 
-import com.djdg.pos.common.api.Result;
-import com.djdg.pos.demo.api.UserDto;
-import com.djdg.pos.demo.dao.UserRepo;
-import com.djdg.pos.demo.domain.User;
+import com.yeting.micro.common.api.Result;
+import com.yeting.micro.qingsu.user.api.UserDto;
+import com.yeting.micro.qingsu.user.dao.UserRepo;
+import com.yeting.micro.qingsu.user.domain.User;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.util.Objects;
 import java.util.Optional;
 
 import javax.annotation.Resource;
@@ -24,8 +23,9 @@ public class DemoService {
     private UserRepo userRepo;
 
     public Result<?> findUser(Long userId) {
-        User user = userRepo.findById(userId);
-        if(!Objects.isNull(user)) {
+        Optional<User> optional = userRepo.findById(userId);
+        if(optional.isPresent()) {
+            User user = optional.get();
             UserDto userDto = new UserDto();
             userDto.setUserId(user.getId());
             userDto.setUserName(user.getUserName());

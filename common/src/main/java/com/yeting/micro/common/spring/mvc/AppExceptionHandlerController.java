@@ -7,16 +7,16 @@
  * /
  */
 
-package com.djdg.pos.common.spring.mvc;
+package com.yeting.micro.common.spring.mvc;
 
 import com.google.common.base.Joiner;
 
-import com.djdg.pos.common.api.CommonErrorCode;
-import com.djdg.pos.common.api.ErrorCode;
-import com.djdg.pos.common.api.Result;
-import com.djdg.pos.common.exception.AppBusinessException;
-import com.djdg.pos.common.exception.RemoteCallException;
-import com.djdg.pos.common.util.JsonUtils;
+import com.yeting.micro.common.api.CommonErrorCode;
+import com.yeting.micro.common.api.ErrorCode;
+import com.yeting.micro.common.api.Result;
+import com.yeting.micro.common.exception.AppBusinessException;
+import com.yeting.micro.common.exception.RemoteCallException;
+import com.yeting.micro.common.util.JsonUtils;
 import com.netflix.hystrix.exception.HystrixRuntimeException;
 import com.netflix.hystrix.exception.HystrixTimeoutException;
 

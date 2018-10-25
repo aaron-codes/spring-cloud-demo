@@ -7,10 +7,10 @@
  * /
  */
 
-package com.djdg.pos.demo;
+package com.yeting.micro.qingsu.user;
 
-import com.djdg.pos.common.spring.WebApplication;
-import com.djdg.pos.demo.constant.SystemConsts;
+
+import com.yeting.micro.common.spring.WebApplication;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +27,5 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-        logger.info(SystemConsts.FAITH);
     }
 }

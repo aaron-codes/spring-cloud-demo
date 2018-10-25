@@ -7,10 +7,10 @@
  * /
  */
 
-package com.djdg.pos.common.exception;
+package com.yeting.micro.common.exception;
 
 
-import com.djdg.pos.common.api.Result;
+import com.yeting.micro.common.api.Result;
 
 /**
  * hystrix 会忽略这个异常, 不会触发熔断

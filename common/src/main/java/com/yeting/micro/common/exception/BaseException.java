@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.common.exception;
+package com.yeting.micro.common.exception;
 
 
 public class BaseException extends RuntimeException {

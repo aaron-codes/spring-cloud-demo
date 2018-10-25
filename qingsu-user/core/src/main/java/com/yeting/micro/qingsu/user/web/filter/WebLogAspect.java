@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.demo.web.filter;
+package com.yeting.micro.qingsu.user.web.filter;
 
 
 import com.alibaba.fastjson.JSON;
@@ -40,7 +40,7 @@ public class WebLogAspect {
 
     private Logger logger = LoggerFactory.getLogger(WebLogAspect.class);
 
-    @Pointcut("execution(public * com.djdg.pos.*.web..*.*(..))")
+    @Pointcut("execution(public * com.yeting.micro.qingsu.*.web..*.*(..))")
     public void webLog() {
     }
 

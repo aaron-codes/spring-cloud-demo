@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.common.util;
+package com.yeting.micro.common.util;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;

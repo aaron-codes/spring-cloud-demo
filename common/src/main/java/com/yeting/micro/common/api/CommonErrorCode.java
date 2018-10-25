@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.common.api;
+package com.yeting.micro.common.api;
 
 
 public enum CommonErrorCode implements ErrorCode {

@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.common.spring.mvc;
+package com.yeting.micro.common.spring.mvc;
 
 import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController;

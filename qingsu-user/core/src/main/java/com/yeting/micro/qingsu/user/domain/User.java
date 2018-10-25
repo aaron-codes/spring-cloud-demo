@@ -6,9 +6,9 @@
  *
  * /
  */
-package com.djdg.pos.demo.domain;
+package com.yeting.micro.qingsu.user.domain;
 
-import com.djdg.pos.common.domain.BaseEntity;
+import com.yeting.micro.common.domain.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,7 +18,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "pos_demo_user")
+@Table(name = "user")
 public class User extends BaseEntity {
 
     private static final long serialVersionUID = -3795422259576216673L;

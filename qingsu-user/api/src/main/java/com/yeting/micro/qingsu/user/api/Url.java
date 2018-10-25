@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.demo.api;
+package com.yeting.micro.qingsu.user.api;
 
 /**
  * Created by Mr.OuYangX, 2017/12/14 下午6:15.

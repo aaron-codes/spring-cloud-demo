@@ -6,7 +6,7 @@
  *
  * /
  */
-package com.djdg.pos.common.domain;
+package com.yeting.micro.common.domain;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -7,10 +7,10 @@
  * /
  */
 
-package com.djdg.pos.common.exception;
+package com.yeting.micro.common.exception;
 
-import com.djdg.pos.common.api.CommonErrorCode;
-import com.djdg.pos.common.api.ErrorCode;
+import com.yeting.micro.common.api.CommonErrorCode;
+import com.yeting.micro.common.api.ErrorCode;
 
 
 public class ServiceUnavailableException extends AppBusinessException {

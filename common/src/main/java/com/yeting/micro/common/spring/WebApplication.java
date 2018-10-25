@@ -7,11 +7,11 @@
  * /
  */
 
-package com.djdg.pos.common.spring;
+package com.yeting.micro.common.spring;
 
 
-import com.djdg.pos.common.spring.mvc.AppErrorController;
-import com.djdg.pos.common.spring.mvc.AppExceptionHandlerController;
+import com.yeting.micro.common.spring.mvc.AppErrorController;
+import com.yeting.micro.common.spring.mvc.AppExceptionHandlerController;
 
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.boot.web.servlet.error.ErrorAttributes;

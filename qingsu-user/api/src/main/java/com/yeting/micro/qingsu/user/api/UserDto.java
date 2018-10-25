@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.demo.api;
+package com.yeting.micro.qingsu.user.api;
 
 
 /**

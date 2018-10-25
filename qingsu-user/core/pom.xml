@@ -45,8 +45,8 @@
             <version>2.7.1</version>
         </dependency>
         <dependency>
-            <groupId>com.djdg.pos</groupId>
-            <artifactId>pos-demo-api</artifactId>
+            <groupId>com.yeting.micro</groupId>
+            <artifactId>qingsu-user-api</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

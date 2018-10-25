@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.common.api;
+package com.yeting.micro.common.api;
 
 import java.io.Serializable;
 

@@ -1,9 +1,9 @@
-package com.djdg.pos.demo.web.v1;
+package com.yeting.micro.qingsu.user.web.v1;
 
-import com.djdg.pos.common.api.Result;
-import com.djdg.pos.demo.api.Url;
-import com.djdg.pos.demo.api.UserDto;
-import com.djdg.pos.demo.service.DemoService;
+import com.yeting.micro.common.api.Result;
+import com.yeting.micro.qingsu.user.api.Url;
+import com.yeting.micro.qingsu.user.api.UserDto;
+import com.yeting.micro.qingsu.user.service.DemoService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

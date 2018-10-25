@@ -7,7 +7,7 @@
  * /
  */
 
-package com.djdg.pos.common.spring.mvc;
+package com.yeting.micro.common.spring.mvc;
 
 
 import com.alibaba.fastjson.JSON;
