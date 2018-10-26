@@ -12,12 +12,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>qingsu-user-core</artifactId>
+    <artifactId>qingsu-account-core</artifactId>
     <packaging>jar</packaging>
 
     <parent>
         <groupId>com.yeting.micro</groupId>
-        <artifactId>qingsu-user</artifactId>
+        <artifactId>qingsu-account</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -47,11 +47,6 @@
         <dependency>
             <groupId>com.yeting.micro</groupId>
             <artifactId>qingsu-user-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.yeting.micro</groupId>
-            <artifactId>qingsu-account-api</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

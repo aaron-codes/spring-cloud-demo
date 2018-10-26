@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: aacount
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9214/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

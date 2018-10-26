@@ -22,8 +22,11 @@
         <module name="pos-demo-api" />
         <module name="pos-demo-core" />
         <module name="pos_server_center" />
+        <module name="qingsu-account-api" />
+        <module name="qingsu-account-core" />
         <module name="qingsu-user-api" />
         <module name="qingsu-user-core" />
+        <module name="qingsu-user-core (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -36,9 +39,13 @@
       <module name="pos-demo-api" target="1.8" />
       <module name="pos-demo-core" target="1.8" />
       <module name="pos_server_center" target="1.8" />
+      <module name="qingsu-account" target="1.8" />
+      <module name="qingsu-account-api" target="1.8" />
+      <module name="qingsu-account-core" target="1.8" />
       <module name="qingsu-user" target="1.8" />
       <module name="qingsu-user-api" target="1.8" />
       <module name="qingsu-user-core" target="1.8" />
+      <module name="qingsu-user-core (1)" target="1.8" />
       <module name="springcloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>

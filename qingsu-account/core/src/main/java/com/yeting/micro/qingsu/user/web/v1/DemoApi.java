@@ -7,7 +7,7 @@ import com.yeting.micro.qingsu.user.service.DemoService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 
@@ -34,18 +33,15 @@ public class DemoApi {
     @Resource
     private DemoService demoService;
 
-    @Autowired
-    RestTemplate restTemplate;
+    @Value("${server.port}")
+    String serverPort;
 
     @ApiOperation(value = "保存用户信息", notes = "")
     @ApiImplicitParam(name = "userDto", value = "保存用户信息", required = true, dataType = "UserDto")
-
     @PostMapping(value = Url.V1.REG_USER)
     public Result regUser(@RequestBody @Validated UserDto userDto) {
-        demoService.saveUser(userDto);
-        String result = restTemplate.postForObject("http://account/ja/demo/v1/users", userDto, String.class);
-        logger.debug(result);
-        return Result.SuccResult();
+        userDto = demoService.saveUser(userDto);
+        return Result.SuccResult(serverPort + ",用户注册成功", userDto);
     }
 
     @ApiOperation(value = "查询用户信息", notes = "")

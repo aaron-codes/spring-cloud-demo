@@ -36,7 +36,7 @@ public class DemoService {
         return Result.FailedResult("不存在的用户");
     }
 
-    public Result<UserDto> saveUser(UserDto userDto) {
+    public UserDto saveUser(UserDto userDto) {
         User user = new User();
         user.setPwd(userDto.getPwd());
         user.setUserName(userDto.getUserName());
@@ -44,8 +44,7 @@ public class DemoService {
         user = userRepo.save(user);
         userDto.setUserId(user.getId());
 
-
-        return Result.SuccResult("注册用户成功", userDto);
+        return userDto;
 
     }
 
